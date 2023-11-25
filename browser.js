@@ -5,7 +5,7 @@ async function startBrowser(){  //declare fun async means to be run concurrent
 	try {
 	    console.log("Opening the browser......"); //print
 	    browser = await puppeteer.launch({
-	        headless: false,
+	        headless: true,
 	        args: ["--disable-setuid-sandbox"],
 	        'ignoreHTTPSErrors': true
 	    });
